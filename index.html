@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Vídeos - Marília Mendonça</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: #ffcc00;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+            animation: fadeInDown 1.5s ease-out;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 20px;
+            animation: fadeInLeft 1.5s ease-out;
+            opacity: 0;
+            animation-fill-mode: forwards;
+        }
+
+        section:nth-child(2) {
+            animation-delay: 0.5s;
+        }
+
+        a {
+            color: #333;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #ffcc00;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #333;
+            color: white;
+            animation: fadeInUp 1.5s ease-out;
+        }
+
+        /* Animações */
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Efeito hover nos links */
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        li:hover {
+            background-color: #ffcc00;
+            transform: translateX(10px);
+        }
+
+        /* Adiciona uma borda suave */
+        section {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Catálogo de Vídeos - Marília Mendonça</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Canal Oficial</h2>
+            <a href="https://www.youtube.com/channel/UC1g1g1g1g1g1g1g1g1g1g1g">Marília Mendonça - Canal Oficial</a>
+        </section>
+        <section>
+            <h2>Playlists Recomendadas</h2>
+            <ul>
+                <li><a href="https://www.youtube.com/playlist?list=PL1g1g1g1g1g1g1g1g1g1g1g">Melhores Músicas de Marília Mendonça</a></li>
+                <li><a href="https://www.youtube.com/playlist?list=PL2g2g2g2g2g2g2g2g2g2g2g">Ao Vivo - Marília Mendonça</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Catálogo de Vídeos</p>
+    </footer>
+</body>
+</html>
